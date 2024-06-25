@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+         name: wisecow
+         labels:
+                app: wisecowlatest
+                spec:
+                     containers
+                    
+name: my-container
+image: nginx
+ports:
+containerPort: 4499
+            kubectl apply -f /wisecow.yml 
+            kubectl get ns
+            sudo apt install fortune-mod cowsay -y
+
+run_tests:
+runs-on: ubuntu-20.04
+steps:
+- uses: actions/checkout@v2
+- name: Run script file
+run: |
+      chmod +x wisecow.sh
+      shell: bash
+
+               
+               
